@@ -30,7 +30,7 @@ SECRET_KEY = "secret"
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://belmonte-django-todo-app.herokuapp.com/']
+ALLOWED_HOSTS = ['belmonte-django-todo-app.herokuapp.com']
 
 
 # Application definition
