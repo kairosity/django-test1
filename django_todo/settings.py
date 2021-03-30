@@ -10,12 +10,12 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 import os
-from pathlib import Path
+# from pathlib import Path
 import dj_database_url
 
-from os import path
-if path.exists("env.py"):
-  import env
+# from os import path
+# if path.exists("env.py"):
+#   import env
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -86,7 +86,7 @@ WSGI_APPLICATION = 'django_todo.wsgi.application'
 # }
 
 DATABASES = {
-    'default': dj_database_url.parse(os.environ.get(DATABASE_URL))
+    'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
 }
 
 
